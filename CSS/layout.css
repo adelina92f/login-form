@@ -1,0 +1,34 @@
+/*./styles*/
+.wrapper{
+    display: block;
+    }
+    .page-sidebar{
+        display: block;
+        text-align: center;
+    }
+    .content{
+        display:block;
+        text-align: center;
+    }
+@media only screen and (min-width: 701px) {
+    .wrapper{
+        display: table;
+        table-layout: fixed;
+        width: 100%;
+        height: 100%;
+    }
+    .page-sidebar{
+        width: 40%;
+    }
+    .page-sidebar,
+    .content{
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    .page-sidebar {
+        width: 430px;
+    }
+}
